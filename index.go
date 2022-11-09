@@ -209,6 +209,8 @@ type DocIDReader interface {
 	Size() int
 
 	Close() error
+
+	BytesRead() uint64
 }
 
 type DocValueVisitor func(field string, term []byte)
